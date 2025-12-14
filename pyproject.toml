@@ -5,7 +5,20 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "boto3>=1.40.64",
+    "fsspec>=2025.10.0",
+    "huggingface-hub>=1.0.1",
+    "kfp>=2.14.6",
+    "matplotlib>=3.10.7",
+    "matplotlib-inline>=0.2.1",
+    "minio>=7.2.18",
+    "mlflow>=3.6.0",
     "pandas>=2.3.3",
     "scikit-learn>=1.7.2",
+    "seaborn>=0.13.2",
+]
+
+[tool.uv.workspace]
+members = [
+    "src/pipelines",
+    "pipelines",
 ]
